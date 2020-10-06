@@ -1,0 +1,111 @@
+style
+    *{
+        box-sizing: border-box;
+    }
+
+body {
+    background: #15102b;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+
+.background {
+    background-repeat:no-repeat; 
+    padding: 170px; 
+    background-size:100%;
+    border-radius: 70px;
+}
+
+ /*jeny idk jak zrobic zeby nie bylo scrollbara*/
+ ::-webkit-scrollbar {
+    width: 0;
+}
+
+/* ---------MENU----------- */
+.menu { 
+    
+    padding: 10px;
+    overflow: hidden;
+   
+}
+
+.menu .icon {
+    display: none;
+}
+
+.menu a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.menu a:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+    color: #15102b;
+}
+
+.menu a:active {
+    box-shadow: 0 3px 6px #15102b;
+    transform: translateY(4px);
+    font-weight: bold;
+    color: #15102b;
+}
+
+.content {
+    padding: 10px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background: darkgray;
+    transition: 0.8s;
+}
+
+
+@media screen and (max-width: 800px) {
+    .menu1 a:not(:first-child) {display: none;}
+    .menu1 a.icon {
+        float: left;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .menu1.responsive {position: relative;}
+    .menu1.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .menu1.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}	
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: 0, 30, 0, 0;
+}
+
+/* FONY/CZCIONKI */
+
+.tab {
+    padding-left: 60px;
+}
+
+.tekstnastronie {
+    margin: 20px;
+}
